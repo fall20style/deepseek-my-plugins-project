@@ -412,6 +412,15 @@ dsh web
 
 브라우저에서 배경이 chocolate이면 성공입니다.
 
+![chocolate 배경이 적용된 Web UI](docs/screenshots/01-web-ui-chocolate.jpeg)
+
+**Plugins** 목록에서도 항목이 켜져 있는 것을 확인할 수 있습니다. 토글을 끄면
+플러그인을 제거하지 않고도 원래 테마로 돌아갑니다.
+
+| 켜짐 | 꺼짐 |
+| --- | --- |
+| ![플러그인 켜짐](docs/screenshots/02-plugins-on.jpeg) | ![플러그인 꺼짐](docs/screenshots/03-plugins-off.jpeg) |
+
 개발자 도구 콘솔에서 토큰과 실제 배경색을 직접 확인할 수도 있습니다.
 
 ```js
