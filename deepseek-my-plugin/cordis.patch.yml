@@ -1,0 +1,8 @@
+# The layer this bundle contributes when a profile installs it.
+#
+# The bare package name is the Loader row. The client module system finds the
+# package's browser half through its `dsh.client` manifest and serves
+# `exports["./client"]` to the Web UI.
+- insert:
+    - id: deepseek-my-plugin
+      name: deepseek-my-plugin
