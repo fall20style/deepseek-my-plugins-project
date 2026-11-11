@@ -63,7 +63,7 @@ npm에서 타입으로만 가져오고, 런타임에는 하네스가 제공하�
 ```text
 work/
 ├── deepseek-harness/                   # 하네스 체크아웃 (dsh 실행/확인용)
-└── deeseek-my-plugins-project/
+└── deepseek-my-plugins-project/
     └── deepseek-my-plugin/             # 플러그인 (여기서 작업)
 ```
 
@@ -77,7 +77,7 @@ pnpm run build
 
 > 체크아웃에서 소스로 실행하는 경우, 이 문서의 `dsh ...` 명령은
 > `pnpm dsh ...`로 바꿔 실행합니다. 예: `pnpm dsh web`,
-> `pnpm dsh plugin --profile web add ../deeseek-my-plugins-project/deepseek-my-plugin`.
+> `pnpm dsh plugin --profile web add ../deepseek-my-plugins-project/deepseek-my-plugin`.
 
 ---
 
@@ -380,8 +380,8 @@ lib/
 # 플러그인이 저장소 안에 있을 때
 dsh plugin --profile web add ./deepseek-my-plugin
 
-# 저장소 밖에 있을 때 (예: 저장소와 나란한 deeseek-my-plugins-project/ 아래)
-dsh plugin --profile web add ../deeseek-my-plugins-project/deepseek-my-plugin
+# 저장소 밖에 있을 때 (예: 저장소와 나란한 deepseek-my-plugins-project/ 아래)
+dsh plugin --profile web add ../deepseek-my-plugins-project/deepseek-my-plugin
 ```
 
 `add`는 절대 경로도 받습니다.

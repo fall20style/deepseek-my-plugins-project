@@ -56,7 +56,7 @@ Add the bundle to the Web profile. Pass the path to this directory (relative or
 absolute), wherever you keep it:
 
 ```sh
-dsh plugin --profile web add ../deeseek-my-plugins-project/deepseek-my-plugin
+dsh plugin --profile web add ../deepseek-my-plugins-project/deepseek-my-plugin
 dsh web
 ```
 
