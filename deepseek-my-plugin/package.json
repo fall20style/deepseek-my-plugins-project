@@ -14,7 +14,9 @@
     "lib/client.js",
     "lib/client.js.map",
     "cordis.patch.yml",
-    "TUTORIAL.md"
+    "README.md",
+    "TUTORIAL.md",
+    "docs"
   ],
   "engines": {
     "dsh": ">=0.2.0 <0.3.0"

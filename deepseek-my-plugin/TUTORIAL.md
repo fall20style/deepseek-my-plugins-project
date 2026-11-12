@@ -3,6 +3,13 @@
 이 문서는 `deepseek-my-plugin`을 처음부터 다시 만들면서 DeepSeek Harness
 플러그인의 구조와 작성 방법을 익히는 튜토리얼입니다.
 
+더 깊은 내용은 두 문서로 이어집니다.
+
+- [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) — 런타임 지형, 레이어 합성,
+  Host/Client 수명주기, 모듈 로더, 슬롯, 테마 토큰
+- [docs/IMPLEMENTATION-GUIDE.md](./docs/IMPLEMENTATION-GUIDE.md) — 도구·서비스·
+  설정·UI·커맨드·라우트 레시피와 패키징/디버깅 체크리스트
+
 최종 결과는 아주 작습니다. 플러그인이 설치되어 있는 동안 Web UI의 기본
 배경색이 **chocolate**(`#D2691E`)이 됩니다.
 
@@ -385,6 +392,13 @@ dsh plugin --profile web add ../deepseek-my-plugins-project/deepseek-my-plugin
 ```
 
 `add`는 절대 경로도 받습니다.
+
+> `add`는 프로필에 패키지를 **링크**할 뿐, 번들 레이어를 켜지는 않습니다.
+> 다음 중 하나로 활성화하세요.
+>
+> - Plugins UI에서 `deepseek-my-plugin`을 켠다.
+> - `$DSH_HOME/profiles/web/package.json`의 `dsh.profile.bundles`에
+>   `"deepseek-my-plugin"`을 추가한다.
 
 > dsh는 플러그인 디렉터리를 pnpm 링크로 참조합니다. 설치 후 플러그인
 > 디렉터리를 옮기거나 지우면 프로필이 깨지므로, 옮겼다면 `remove` 후 다시

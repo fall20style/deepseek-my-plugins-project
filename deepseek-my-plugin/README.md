@@ -6,6 +6,13 @@ While it is installed, the Web UI background is `chocolate` (`#D2691E`).
 **한국어 튜토리얼:** [TUTORIAL.md](./TUTORIAL.md) — 처음부터 다시 만들면서
 플러그인 구조와 작성 방법을 익히는 단계별 가이드입니다.
 
+**한국어 심화 문서:**
+
+- [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) — profile/bundle 합성, Host와
+  Client 두 평면, 서비스·이벤트, 모듈 로더, 슬롯, 테마 토큰, 데이터 경로
+- [docs/IMPLEMENTATION-GUIDE.md](./docs/IMPLEMENTATION-GUIDE.md) — 도구·서비스·
+  설정·UI·커맨드·라우트를 붙이는 레시피, 패키징, 디버깅, 체크리스트
+
 ## Screenshots
 
 The Web UI with the plugin enabled:
@@ -65,11 +72,24 @@ runtime.
 
 ## Install into a profile
 
-Add the bundle to the Web profile. Pass the path to this directory (relative or
+Add the package to the Web profile. Pass the path to this directory (relative or
 absolute), wherever you keep it:
 
 ```sh
 dsh plugin --profile web add ../deepseek-my-plugins-project/deepseek-my-plugin
+```
+
+`add` only links the package into the profile; it does not enable the bundle
+layer. Enable it in either way:
+
+- Turn `deepseek-my-plugin` on in the Web UI's **Plugins** list, or
+- add `"deepseek-my-plugin"` to `dsh.profile.bundles` in
+  `$DSH_HOME/profiles/web/package.json`.
+
+Verify the composed layer, then start the UI:
+
+```sh
+dsh --profile web --dump-config   # shows: # == deepseek-my-plugin
 dsh web
 ```
 
