@@ -11,6 +11,8 @@
 
 - [TUTORIAL.md](../TUTORIAL.md) — 이 플러그인을 처음부터 만드는 단계별 가이드
 - [IMPLEMENTATION-GUIDE.md](./IMPLEMENTATION-GUIDE.md) — 실제 작성 레시피와 체크리스트
+- [PLUGIN_MODEL.md](./PLUGIN_MODEL.md) — 에이전트 코어와 플러그인의 통신 모델,
+  Cordis의 네 역할, 턴/스텝·툴 파이프라인 개입 지점
 
 ---
 

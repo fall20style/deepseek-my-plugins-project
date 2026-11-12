@@ -12,6 +12,8 @@ While it is installed, the Web UI background is `chocolate` (`#D2691E`).
   Client 두 평면, 서비스·이벤트, 모듈 로더, 슬롯, 테마 토큰, 데이터 경로
 - [docs/IMPLEMENTATION-GUIDE.md](./docs/IMPLEMENTATION-GUIDE.md) — 도구·서비스·
   설정·UI·커맨드·라우트를 붙이는 레시피, 패키징, 디버깅, 체크리스트
+- [docs/PLUGIN_MODEL.md](./docs/PLUGIN_MODEL.md) — 에이전트 코어와 플러그인의 통신
+  모델, Cordis의 역할, 턴/스텝·툴 파이프라인 개입 지점, durable/live 평면
 
 ## Screenshots
 
