@@ -3,8 +3,10 @@
 이 문서는 `deepseek-my-plugin`을 처음부터 다시 만들면서 DeepSeek Harness
 플러그인의 구조와 작성 방법을 익히는 튜토리얼입니다.
 
-더 깊은 내용은 세 문서로 이어집니다.
+더 깊은 내용은 네 문서로 이어집니다.
 
+- [docs/CORDIS.md](./docs/CORDIS.md) — Cordis 프레임워크 자체의 구조와 사용법
+  (Context·plugin·fiber·effect, 서비스/이벤트, 조합, 설정, 진단)
 - [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) — 런타임 지형, 레이어 합성,
   Host/Client 수명주기, 모듈 로더, 슬롯, 테마 토큰
 - [docs/IMPLEMENTATION-GUIDE.md](./docs/IMPLEMENTATION-GUIDE.md) — 도구·서비스·

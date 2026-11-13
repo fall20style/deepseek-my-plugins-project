@@ -10,8 +10,9 @@
 - 하네스 소스 경로는 `$HARNESS`로 표기합니다.
 
 > 코어와의 통신 계약(서비스·이벤트·스코프·inbox)은
-> [PLUGIN_MODEL.md](./PLUGIN_MODEL.md)에 도식과 함께 정리되어 있습니다. 이 문서의
-> 레시피가 "왜 그렇게 쓰는지" 막힐 때 함께 읽으십시오.
+> [PLUGIN_MODEL.md](./PLUGIN_MODEL.md)에 도식과 함께 정리되어 있습니다. Cordis 자체의
+> 개념(Context·fiber·effect·디스패치)이 먼저 필요하면 [CORDIS.md](./CORDIS.md)를 보십시오.
+> 이 문서의 레시피가 "왜 그렇게 쓰는지" 막힐 때 함께 읽으십시오.
 
 ---
 

@@ -12,6 +12,7 @@
 관련 문서:
 
 - [ARCHITECTURE.md](./ARCHITECTURE.md) — profile/bundle 합성, Host/Client 이중 구조, 모듈 로더, 슬롯
+- [CORDIS.md](./CORDIS.md) — Cordis 프레임워크 자체의 구조와 사용법
 - [IMPLEMENTATION-GUIDE.md](./IMPLEMENTATION-GUIDE.md) — 실제 작성 레시피와 체크리스트
 - [TUTORIAL.md](../TUTORIAL.md) — 처음부터 만드는 입문 가이드
 
